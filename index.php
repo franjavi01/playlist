@@ -14,7 +14,7 @@
 <div class="container p-4">
     <div class="row">
         <div class="col-md-4">
-            <form action="#" method="post">
+            <form action="playlist.php" method="POST">
                 <div class="mb-3">
                     <label for="cancion" class="form-label">Nombre de la canción:</label>
                     <input type="text" class="form-control" name="cancion">
@@ -33,6 +33,10 @@
                 </div>
                 <button type="submit" class="btn btn-warning" name="guardar">Enviar</button>
             </form>
+        </div>
+
+        <div class="col-md-8">
+
         </div>
 
     <!-- <table class="table table-hover">
