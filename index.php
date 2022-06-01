@@ -17,21 +17,21 @@
             <form action="playlist.php" method="POST">
                 <div class="mb-3">
                     <label for="cancion" class="form-label">Nombre de la canción:</label>
-                    <input type="text" class="form-control" name="cancion">
+                    <input type="text" class="form-control" name="song">
                 </div>
                 <div class="mb-3">
                     <label for="artista" class="form-label" >Artista:</label>
-                    <input type="text" class="form-control" name="artista">
+                    <input type="text" class="form-control" name="artist">
                 </div>
                 <div class="mb-3">
                     <label for="año" class="form-label-file">Año:</label>
-                    <input type="number" min="1900" max ="2100" class="form-control" name="año">
+                    <input type="number" min="1900" max ="2100" class="form-control" name="year">
                 </div>
                 <div class="mb-3">
                     <label for="url" class="form-label">Enlace:</label>
                     <input type="text" class="form-control" name="url">
                 </div>
-                <button type="submit" class="btn btn-warning" name="guardar">Enviar</button>
+                <button type="submit" class="btn btn-warning" name="save">Enviar</button>
             </form>
         </div>
 
