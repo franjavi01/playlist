@@ -1,6 +1,5 @@
 <?php
 
-include "conexionBaseDatos.php";
 $conexion = mysqli_connect("localhost", "root", "", "playlist");
 
 if (isset(($_POST['save']))){
@@ -19,7 +18,7 @@ if (isset(($_POST['save']))){
     if(!$resultado){
         echo " pero no esta guardando los datos";
     }else{
-        echo " y guardado los datos";
+        header ("Location: index.php");
     }
 
 }
