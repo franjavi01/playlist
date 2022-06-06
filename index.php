@@ -10,7 +10,6 @@
 </head>
 <body>
 
-<?php include "conexionBaseDatos.php"; ?>
 <div class="container p-4">
     <div class="row">
         <div class="col-md-4">
