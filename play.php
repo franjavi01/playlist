@@ -1,12 +1,16 @@
 <?php
 $conexion = mysqli_connect("localhost", "root", "", "playlist");
-$query = "SELECT * from mis_canciones_favoritas";
-$resultado = mysqli_query($conexion, $query);
-while($row = mysqli_fetch_array($resultado)){ 
+if(isset($_GET['id'])){
+    $id = $_GET['id'];
+    $query = "SELECT * FROM mis_canciones_favoritas WHERE id = $id";
+    $resultado = mysqli_query ($conexion, $query);
+    if(mysqli_num_rows($resultado) == 1){
+        $row = mysqli_fetch_array($resultado);
+        $url = $row['Url'];
+    }
+}
 
 ?>
-    
-<video controls><source src="<?php echo $row['url'] ?>" type="video/mp4"></video>  
 
-<?php } ?>
+<video controls autoplay><source src="<?php echo $url; ?>" type="video/mp4"></video> 
 
